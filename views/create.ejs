@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <%- include('./partials/head.ejs')  %>
+    
+<body>
+    
+
+    <%- include('./partials/nav.ejs')  %>
+    
+    <div class="create-idea content">
+        <form action="/ideas" method="post">
+            <label for="title">idea title</label>
+            <input type="text" id="title" name="title" required>
+            <label for="snippet">idea snippet</label>
+            <input type="text" id="snippet" name="snippet" required>
+            <label for="body">idea body</label>
+            <textarea name="body" id="body" required></textarea>
+            <button>submit</button>
+        </form>
+
+    </div>
+
+    <%- include('./partials/footer.ejs')  %>
+</body>
+</html>
